@@ -1,0 +1,12 @@
+<h1>Lists#show</h1>
+<p>Find me in app/views/lists/show.html.erb</p>
+<h1><%= @list.name %></h1>
+
+<% @list.bookmarks.each do |bookmark| %>
+<%# <%= raise %> %>
+<%= bookmark.comment %>
+<%= bookmark.movie.title %>
+<%= bookmark.movie.overview %>
+<%= bookmark.movie.poster_url %>
+<%= bookmark.movie.rating %>
+<% end %>
